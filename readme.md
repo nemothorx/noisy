@@ -3,10 +3,15 @@
 This script uses sox (invoked as "play") to simulate various soothing ambient
 sounds via synthesising noise and manipulating it
 
-# Thanks to
-Original idea from http://unreasonable.org/white_noise_generator_with_sox_for_Linux
 
-Further discussed on facebook and IRC in 2016, and expanded again 2023
+# Thanks to
+
+Original idea from https://unreasonable.org/white_noise_generator_with_sox_for_Linux - and definitely worth visiting for more ideas in the comments
+
+Also discussed on fb and IRC in 2016, and revisited again 2023
+
+Notable thanks to IRC's Neale and Paul
+
 
 # Issues
 
