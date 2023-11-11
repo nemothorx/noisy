@@ -48,7 +48,13 @@ where theme is one of the following:"
 esac
 
 # NOTES
-# append 'vol 2' at the end to make louder. Can't go much beyond 3 without clipping
+# * append 'vol 2' at the end to make louder. Can't go much beyond 3 without clipping
+# * want to save it to a regular audiofile to play on another system? 
+#   - run it as "rec", set a duration, and put the filename in the right spot
+#       - note: this still runs in real time
+#       - based on a single test, this works by way of example:
+#           rec -q -c2 -n 10sec-of-enterprise.wav synth 00:10 whitenoise band -n 100 24 band -n 300 100 gain +20
+# 
 
 # Wishlist
 # - ticktock clock
