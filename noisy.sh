@@ -37,6 +37,12 @@ case $target in
     enterprise|enterprise4) #~ TNG Starship Enterprise v4 (h/t Neale / Paul) 
         play -q -c2 -n synth $dur whitenoise band -n 100 24 band -n 300 100 gain +20
         ;;
+    enterpriseb|breathing) #~ Breathing variant - 12.5second tremolo
+        play -q -c2 -n synth $dur whitenoise band -n 100 24 band -n 300 100 gain +10 tremolo 0.08 75
+        ;;
+    anxiety1) #~ Higher pitched and pulsing effect. Not pleasant
+        play -q -c2 -n synth $dur triangle band -n 400 124 band -n 600 100 gain +10  tremolo 1 80 tremolo 2 30 tremolo 3 40 tremolo 4 50 tremolo 6 80
+        ;;
     #) #~ Enterprise themes attempted to be tuned towards TV accuracy
     *)
         echo "Invocation: '$0 [theme] [duration]'
