@@ -43,6 +43,9 @@ case $target in
     anxiety1) #~ Higher pitched and pulsing effect. Not pleasant
         play -q -c2 -n synth $dur triangle band -n 400 124 band -n 600 100 gain +10  tremolo 1 80 tremolo 2 30 tremolo 3 40 tremolo 4 50 tremolo 6 80
         ;;
+    anxiety2|tunnel) #~ Windy high pitched echoes in a tunnel?
+        play -q -c2 -n -n synth pinknoise band -n 900 10 gain +15 band -n 300 10 gain +15 tremolo 0.036 60 tremolo 0.0923 50 tremolo 7.21 40
+        ;;
     #) #~ Enterprise themes attempted to be tuned towards TV accuracy
     *)
         echo "Invocation: '$0 [theme] [duration]'
